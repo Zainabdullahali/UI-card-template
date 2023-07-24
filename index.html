@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .container{
+            width: 100vw;
+            height: 100vh;
+            background-color: #74EBD5;
+            background-image: linear-gradient(90deg, #74EBD5 0%, #9FACE6 100%);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .book{
+            height: 50%;
+            width: 80%;
+            background-color: rgba(122, 122, 122, 0.62);
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            flex-direction: row;
+            border-radius: 20px;
+            gap: 10px;
+            box-shadow: 20px 20px 50px 15px grey;
+        }
+        .firstBox{
+            width: 30%;
+            height: 90%;
+            background-color: white;
+            border-radius: 5px;
+            transition: all 0.4s linear 0s;
+        }
+        .firstBox:hover{
+            transform: scale(1.1);
+        }
+        .secondBox:hover{
+            transform: scale(1.1);
+        }
+        .thirdBox:hover{
+            transform: scale(1.1);
+        }
+        .secondBox{
+            width: 30%;
+            height: 90%;
+            background-color: white;
+            border-radius: 5px;
+            transition: all 0.4s linear 0s;
+        }
+        .thirdBox{
+            width: 30%;
+            height: 90%;
+            background-color: white;
+            border-radius: 5px;
+            transition: all 0.4s linear 0s;
+        }
+        .firstBox img{
+            width: 100%;
+            height: 55%;
+            border-top-left-radius: 5px;
+            border-top-right-radius: 5px;
+        }
+        .secondBox img{
+            width: 100%;
+            height: 55%;
+            border-top-left-radius: 5px;
+            border-top-right-radius: 5px;
+        }
+        .thirdBox img{
+            width: 100%;
+            height: 55%;
+            border-top-left-radius: 5px;
+            border-top-right-radius: 5px;
+
+        }
+        .explore{
+            width: 80%;
+            height: 15%;
+            background-color: rgba(65, 105, 225, 0.515);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: auto;
+            transition: all 0.7s linear 0s;
+        }
+        .explore:hover{
+            transform: scale(1.1);
+        }
+        .book p{
+            padding: 5px;
+        }
+        .book h1{
+            padding-left: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="book">
+            <div class="firstBox">
+                <img src="https://wallpaperaccess.com/full/682419.jpg" alt="A starry night">
+                <h1>A Starry night</h1>
+                <p>Look up at the night sky, and find yourself <strong>immersed</strong> in the amazing mountain range of Aspen. </p>
+                <div class="explore"><a href="#">Explore</a></div>
+            </div>
+            <div class="secondBox">
+                <img src="https://images.unsplash.com/photo-1470252649378-9c29740c9fa8?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8bW9ybmluZyUyMG5hdHVyZXxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=500&q=60" alt="morning photo">
+                <h1>Misty Morning</h1>
+                <p> Capture the stunning <strong>essence</strong> of early morning sunrise in the Californian wilderness.</p>
+                <div class="explore"><a href="#">Explore</a></div>
+            </div>
+            <div class="thirdBox">
+                <img src="https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885_1280.jpg" alt="sunset photo">
+                <h1>Utah sunsets</h1>
+                <p>Sunsets over the <strong>stunning</strong> Utah Canyonlands, is truly something much more than incredible.</p>
+                <div class="explore"><a href="#">Explore</a></div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
